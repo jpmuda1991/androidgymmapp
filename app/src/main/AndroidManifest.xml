@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elab.elabo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".Application.BodyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.E22Labo2">
+        <activity
+            android:name=".Activities.YoutubeVidActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.ExercisesActivity" />
+        <activity
+            android:name=".Activities.ExploreExrActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.ExercisesActivity" />
+        <activity
+            android:name=".Activities.EditExerciseActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.ExercisesActivity" />
+        <activity
+            android:name=".Activities.AddNewExerciseActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.ExercisesActivity" />
+        <activity
+            android:name=".Activities.ExercisesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

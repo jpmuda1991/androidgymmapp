@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_30sdp"
+    android:layout_height="@dimen/_180sdp"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardBackgroundColor="#8000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cat_img"
+            android:layout_width="140dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bicep_exr_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/exr_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Leg Extenstion"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/green"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@id/edit_img"
+            app:layout_constraintStart_toEndOf="@+id/cat_img"
+            app:layout_constraintTop_toTopOf="@+id/cat_img" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/edit_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/del_img"
+            app:layout_constraintEnd_toStartOf="@id/del_img"
+            app:layout_constraintTop_toTopOf="@+id/del_img"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/del_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/exr_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/exr_title"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="jashdjasdhjas"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/light_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/del_img"
+            app:layout_constraintStart_toStartOf="@+id/exr_title"
+            app:layout_constraintTop_toBottomOf="@+id/exr_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

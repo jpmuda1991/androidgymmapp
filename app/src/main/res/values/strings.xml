@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">E22Labo2</string>
+
+
+    <string name="youtube_api">AIzaSyDcagj9M6JB8otlqCncwealtc3aIbUn1so</string>
+
+<!--    <string-array name="contact_arr">-->
+<!--        <item>Nous contacter</item>-->
+<!--        <item>e-mail</item>-->
+<!--        <item>numéro de téléphone</item>-->
+
+<!--    </string-array>-->
+
+    <string name="contact_no">5148319986</string>
+    <string name="email">jpmuda1991@gmail.com</string>
+
+</resources>
